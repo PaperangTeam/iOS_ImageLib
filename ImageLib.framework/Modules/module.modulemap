@@ -1,0 +1,6 @@
+framework module ImageLib {
+  umbrella header "ImageLib.h"
+
+  export *
+  module * { export * }
+}
