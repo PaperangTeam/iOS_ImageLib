@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ImageLib'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'MiaoBao SDK of ImageLib.'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/HolmesZhao/ImageLib'
+  s.homepage         = 'https://github.com/PaperangTeam/iOS_ImageLib'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Theodore' => 'hoho.qiu@paperang.com' }
-  s.source           = { :git => 'https://github.com/HolmesZhao/ImageLib.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/PaperangTeam/iOS_ImageLib.git', :tag => s.version.to_s }
   #s.source = { :http => 'https://mb-ios.paperang.com/framework/sdk.zip' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
