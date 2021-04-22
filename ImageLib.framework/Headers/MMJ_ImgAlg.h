@@ -125,6 +125,13 @@ typedef enum MMJ_PRINTER_DPI
  */
 int MMJ_IsToPrintByFont(MMJ_Img *pImgSrc, int DPI, int printW, int *iScale);
 
+/*
+ MMJ_GetMaxCutHeightForTextImg:获取图像最大切割高度
+ pImgSrc:原始图像， 最好是二值图像
+ iFitH:适合高度数组，最后的空行
+ return:0-正确，其余为错误代码
+ */
+int MMJ_GetMaxCutHeightForTextImg(MMJ_Img *pImgSrc, int iFitH[2]);
 
 /*
  MMJ_GetfitHeightForTextImg：获取图像合适切割高度
@@ -182,6 +189,14 @@ typedef enum MMJ_DEL_TYPE
 int MMJ_TextAdjust(MMJ_Img *pImgSrcDst, int iThresh, int iDelType);
 
 /*
+ MMJ_TextEraserMerge:橡皮擦信息合并到原图alpha通道
+ pImgSrcDst：图像原图，rgb
+ pEraser ：橡皮擦轨迹图像
+ return:0-正确，其余为错误代码
+ */
+int MMJ_TextEraserMerge(MMJ_Img *pImgSrcDst, MMJ_Img *pEraser);
+
+/*
  MMJ_TextBinary:文档二值化
  pImgSrcDst:传入图像，结果覆盖
  iThresh:【0，64】，0-自动计算阈值，其余为阈值
@@ -205,6 +220,7 @@ int MMJ_ErrorDiffusionByShort(MMJ_Img *pImgSrcDst);
  return：0-正确，其余为错误代码
  */
 int MMJ_GrayScalePrinterByErrorDiffusion(MMJ_Img *pImgSrcDst, int iScale);
+
 /*
  MMJ_PrinterImgBin：打印机图像二值化
  pImgSrcDst:传入图像，结果覆盖
