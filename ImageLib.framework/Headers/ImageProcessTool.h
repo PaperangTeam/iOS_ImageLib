@@ -67,6 +67,12 @@
 + (UIImage*)getFitHeightImagesWithImage:(UIImage*)image
                               maxHeight:(CGFloat)maxHeight;
 
+/// 获得固定高度的图片数组(不切掉文本)
+/// @param iNewH 固定高度
+/// @param originImages 原始图片数组
++ (NSArray<UIImage *> *)getFitImagesWithHeight:(NSInteger)iNewH
+                                  originImages:(NSArray<UIImage *> *)originImages;
+
 + (UIImage *)imageAutoBinaryzation:(UIImage *)image withPoints:(NSArray *)points;
 + (UIImage *)imageTextBinary:(UIImage *)image changeImgSize:(BOOL)change;
 + (UIImage *)imageWithPrinterImgBin:(UIImage *)image withPoints:(NSArray *)points;
