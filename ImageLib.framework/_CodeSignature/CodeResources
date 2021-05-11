@@ -76,6 +76,10 @@
 		<data>
 		CHReHtPbCXcKruVdoC0FqIGVk9g=
 		</data>
+		<key>Headers/cpstool.h</key>
+		<data>
+		ix20KP+b7Q7OnctGCYmdjQqTEQE=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		68rWfM6vagu6kgl6RzsA+i9DT0Q=
@@ -283,6 +287,17 @@
 			<key>hash2</key>
 			<data>
 			VLJOaWaOCwzfIljBJG8o2HaPVMWl50k3YcJWHSqy78c=
+			</data>
+		</dict>
+		<key>Headers/cpstool.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ix20KP+b7Q7OnctGCYmdjQqTEQE=
+			</data>
+			<key>hash2</key>
+			<data>
+			VVDJ6jn9HwngQfvmdT+V1U4b9m2V8P8wRCzgY1E7LvY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
