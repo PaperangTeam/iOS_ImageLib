@@ -11,6 +11,7 @@
 // algpuls+版本之后 所有算法相关引用只允许导入MMJ_ImgAlg.h和HFMcoding
 #import "MMJ_ImgAlg.h"
 #import "HFMcoding.h"
+#import "cpstool.h"
 
 #import "ImageProcessTool.h"
 #import "ImageManipulation.h"
