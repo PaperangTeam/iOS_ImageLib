@@ -370,6 +370,13 @@ pImgSrcDst:原始图像，结果图像覆盖
 */
 int MMJ_Color2Gray(MMJ_Img *pImgSrcDst);
 
+/*
+ MMJ_Img2BinHfmData:安卓端测试，截图图像二值化，并转成打印数据，最后哈夫曼压缩
+ MMJ_Img：截图图像
+ iDataDstLen:压缩后二叉树压缩数据合并长度
+ return:返回数据
+ */
+unsigned char *MMJ_Img2BinHfmData(MMJ_Img *pImgSrc, int *iDataDstLen);
 #ifdef __cplusplus
 }
 #endif

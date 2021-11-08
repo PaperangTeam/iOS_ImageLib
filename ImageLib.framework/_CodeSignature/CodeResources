@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/MMJ_ImgAlg.h</key>
 		<data>
-		qShSJsQcxJLjTj2C4UUgypQuuk8=
+		HsRaWt5M74mnp9Ep3RsjiYDacoQ=
 		</data>
 		<key>Headers/WM_DataEncode.h</key>
 		<data>
@@ -79,6 +79,10 @@
 		<key>Headers/cpstool.h</key>
 		<data>
 		ix20KP+b7Q7OnctGCYmdjQqTEQE=
+		</data>
+		<key>Headers/mbPrintProtocol.h</key>
+		<data>
+		2+HSzZ8UerCz78N1hTu88Tj1w9c=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -271,11 +275,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qShSJsQcxJLjTj2C4UUgypQuuk8=
+			HsRaWt5M74mnp9Ep3RsjiYDacoQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			LjM74LabG/b4KGi9KcJ4oQQ9rCH9Fe+H5qZJYe8DrJk=
+			nz1dxkeMKHeiRP9Y6IwHxWf02MR/XrRAc7s9qIFuKtU=
 			</data>
 		</dict>
 		<key>Headers/WM_DataEncode.h</key>
@@ -298,6 +302,17 @@
 			<key>hash2</key>
 			<data>
 			VVDJ6jn9HwngQfvmdT+V1U4b9m2V8P8wRCzgY1E7LvY=
+			</data>
+		</dict>
+		<key>Headers/mbPrintProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2+HSzZ8UerCz78N1hTu88Tj1w9c=
+			</data>
+			<key>hash2</key>
+			<data>
+			Eyey9REtR/7nWDKQe/4XoAHRIU/hURgmDzQomrwSjH4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
