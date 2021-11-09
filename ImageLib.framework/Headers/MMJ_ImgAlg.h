@@ -373,10 +373,21 @@ int MMJ_Color2Gray(MMJ_Img *pImgSrcDst);
 /*
  MMJ_Img2BinHfmData:安卓端测试，截图图像二值化，并转成打印数据，最后哈夫曼压缩
  MMJ_Img：截图图像
- iDataDstLen:压缩后二叉树压缩数据合并长度
- return:返回数据
+ iDataDstLen:压缩后包含打印协议的可打印数据长度
+ return:返回可打印数据
  */
 unsigned char *MMJ_Img2BinHfmData(MMJ_Img *pImgSrc, int *iDataDstLen);
+
+/*
+ MMJ_HfmData2ImgData:可打印压缩数据还原图像
+ pDataSrc：打印数据流
+ iDataLen：数据流长度
+ iImgW：返回图像宽度
+ iImgH：返回图像高度
+ 返回值：二值图像数据
+ */
+unsigned char *MMJ_HfmData2ImgData(unsigned char *pDataSrc, int iDataLen, int *iImgW, int *iImgH);
+
 #ifdef __cplusplus
 }
 #endif
