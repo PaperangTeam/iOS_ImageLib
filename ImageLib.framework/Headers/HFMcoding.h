@@ -112,7 +112,7 @@ extern "C"
      返回值 : 哈夫曼树解码数据
      */
     unsigned char *HFMdecoding(HFM_Decode_Node *hfmTree, unsigned char *pDataSrc, int iLenSrc, int *iLenDst);
-//    int HFMdecoding(HFM_Decode_Node *hfmTree, unsigned char *pDataDst, unsigned char *pDataSrc, int iLenSrc);
+    int HFMdecoding_mem(HFM_Decode_Node *hfmTree, unsigned char *pDataDst, unsigned char *pDataSrc, int iLenSrc);
     
 #ifdef __cplusplus
 }
