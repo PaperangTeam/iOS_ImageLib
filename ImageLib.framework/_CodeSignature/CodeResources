@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/MMJ_ImgAlg.h</key>
 		<data>
-		NJTVhMjURU9QNn3xbuaJvmkD83M=
+		YOVbWCBfev5/RyPpR5VQObI3yo8=
 		</data>
 		<key>Headers/WM_DataEncode.h</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Headers/mbPrintProtocol.h</key>
 		<data>
-		2+HSzZ8UerCz78N1hTu88Tj1w9c=
+		3D0b4a+FpBWqR8QaOSfFk77ecQU=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -275,11 +275,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NJTVhMjURU9QNn3xbuaJvmkD83M=
+			YOVbWCBfev5/RyPpR5VQObI3yo8=
 			</data>
 			<key>hash2</key>
 			<data>
-			PRLIasXucXu6Bzmufr0RK1Z2FCcr5gT12TMfF6f47YQ=
+			LHkYtEWthP2umIoxsXFdn8Ua1wtVJWOJzWOJLsQAt80=
 			</data>
 		</dict>
 		<key>Headers/WM_DataEncode.h</key>
@@ -308,11 +308,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2+HSzZ8UerCz78N1hTu88Tj1w9c=
+			3D0b4a+FpBWqR8QaOSfFk77ecQU=
 			</data>
 			<key>hash2</key>
 			<data>
-			Eyey9REtR/7nWDKQe/4XoAHRIU/hURgmDzQomrwSjH4=
+			cFKBbIKzOoQDEnMGN2YsfWAStTZguiBIoS4tHUCZIh8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

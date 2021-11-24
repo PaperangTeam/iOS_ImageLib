@@ -373,12 +373,13 @@ int MMJ_Color2Gray(MMJ_Img *pImgSrcDst);
 /*
  MMJ_Img2BinHfmData:安卓端测试，截图图像二值化，并转成打印数据，最后哈夫曼压缩
  MMJ_Img：截图图像
- iBagDataLenLimit:协议封包数据长度限制，c1-2kb,c7-7kb
+ iBagDataLenLimit:协议封包数据长度限制，c1-2kb,c7-5kb
  iBinType:二值化类型,0:MMJ_PrinterImgBin；1、MMJ_TextBinary；2、MMJ_Threshold-otsu；3、省墨+otsu；4、锐化误差
+ iOffset:打印数据偏移点数
  iDataDstLen:压缩后包含打印协议的可打印数据长度
  return:返回可打印数据
  */
-unsigned char *MMJ_Img2BinHfmData(MMJ_Img *pImgSrc, int iBagDataLenLimit, int iBinType, int *iDataDstLen);
+unsigned char *MMJ_Img2BinHfmData(MMJ_Img *pImgSrc, int iBagDataLenLimit, int iBinType, int iOffset, int *iDataDstLen);
 
 /*
  MMJ_HfmData2ImgData:可打印压缩数据还原图像
@@ -389,6 +390,17 @@ unsigned char *MMJ_Img2BinHfmData(MMJ_Img *pImgSrc, int iBagDataLenLimit, int iB
  返回值：二值图像数据
  */
 unsigned char *MMJ_HfmData2ImgData(unsigned char *pDataSrc, int iDataLen, int *iImgW, int *iImgH);
+
+/*
+ MMJ_HfmData2ImgData_more:可打印压缩数据还原图像，多页数据可解，每次还原一页
+ pDataSrc：打印数据流
+ iDataLen：数据流长度
+ iImgW：返回图像宽度
+ iImgH：返回图像高度
+ iIdx:数据索引
+ 返回值：二值图像数据
+ */
+unsigned char *MMJ_HfmData2ImgData_more(unsigned char *pDataSrc, int iDataLen, int *iImgW, int *iImgH, int *iIdx);
 
 #ifdef __cplusplus
 }

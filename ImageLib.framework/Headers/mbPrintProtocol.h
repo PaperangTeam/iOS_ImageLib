@@ -17,12 +17,14 @@ extern "C"
 int mbSetPrintStart(unsigned char *pDataSrcDst);
 int mbSetPrintEnd(unsigned char *pDataSrcDst);
 int mbSetPrintHfmTree(unsigned char *pDataDst, unsigned char *pHfmTreePre, unsigned char *pHfmTreeMid, int iTreeLen);
-int mbSetPrintData(unsigned char *pDataDst, unsigned char *pDataSrc, int iDataLen, int iPrintW, int iIsHfm);
+int mbSetPrintData(unsigned char *pDataDst, unsigned char *pDataSrc, int iDataLen, int iPrintW, int iIsHfm, int iOffset);
 
 int mbGetPrintStart(unsigned char *pDataSrc, int iDataLen);
 int mbGetPrintEnd(unsigned char *pDataSrc, int iDataLen);
 int mbGetPrintHfmTree(unsigned char *pDataSrc, int iDataLen, unsigned char *pHfmTreePre, unsigned char *pHfmTreeMid, int *iTreeLen);
 int mbGetPrintData(unsigned char *pDataSrc, int iDataLen, unsigned char *pDataDst, int *iDstLen, int *iPrintW);
+
+int mbPrintProAnalysis(unsigned char *pDataSrc, int iDataLen, unsigned char *pDataDst, int *iDstLen, int *iPrintW, int *iProType);
 #ifdef __cplusplus
 }
 #endif
