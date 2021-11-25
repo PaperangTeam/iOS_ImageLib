@@ -88,7 +88,7 @@ extern "C"
     //哈夫曼解码数据结构
     typedef struct HFMDECODENODE
     {
-        int lchild, rchild;     //左树，右树
+        short lchild, rchild;     //左树，右树
         unsigned short cname;   //节点名
     }HFM_Decode_Node;
     
