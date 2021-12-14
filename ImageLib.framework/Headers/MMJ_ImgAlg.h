@@ -50,10 +50,19 @@ typedef struct MMJ_POINT
 }MMJ_Pt;
 
 /*
+ MMJ_GetSuctionSidePointByLsdForBook：书本拍摄
+ pImgSrc：书本图片
+ ptIn：书本分界线
+ ptOut：书本AB页四个角点
+ return：0-失败，1-成功
+ */
+int MMJ_GetSuctionSidePointByLsdForBook(MMJ_Img *pImgSrc, MMJ_Pt ptOut[8]);
+/*
+
  MMJ_GetSuctionSidePointByLsd:吸边算法，根据lsd查找直线组合成不规则四边形
  pImgSrc:原始图像
  pt[4]:四边形四个顶点，顶点顺序：pt[0]-左上，pt[1]-右上，pt[2]-左下，pt[3]-右下
- return:0-表示错误，1表示成功找到，2表示太近提示拿远，3表示太远提示靠近
+ return:0-成功找到合适角点； 其余为错误代码，查看错误代码。
  */
 int MMJ_GetSuctionSidePointByLsd(MMJ_Img *pImgSrc, MMJ_Pt pt[4]);
 

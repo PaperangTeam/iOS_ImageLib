@@ -22,7 +22,7 @@ extern "C"
      iLinesNum:直线实际数量
      return:0-错误，1-正确
      */
-    int GetLines(ImgStruct *pImgSrc, CLine *pLines, int *iLinesNum);
+    int GetLines(ImgStruct *pImgSrc, CLine *pLines, int *iLinesNum, int iTolerate);
     
 #ifdef __cplusplus
 }

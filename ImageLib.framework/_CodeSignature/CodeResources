@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/ImgLineLSD.h</key>
 		<data>
-		RX74neFTKqzHS9SV5Ffg5XDOHrU=
+		qYd3zTdg8JVfApGMqFKGm+hmRnI=
 		</data>
 		<key>Headers/ImgOCRProc.h</key>
 		<data>
@@ -51,6 +51,10 @@
 		<key>Headers/ImgSuctionSide.h</key>
 		<data>
 		cpmHFus7+LZXExC2Gz1RDs+aX1E=
+		</data>
+		<key>Headers/ImgSuctionSideBook.h</key>
+		<data>
+		DrSUhfRZkIXY5UYH/OypeSBt168=
 		</data>
 		<key>Headers/ImgTextFontSize.h</key>
 		<data>
@@ -70,7 +74,7 @@
 		</data>
 		<key>Headers/MMJ_ImgAlg.h</key>
 		<data>
-		YOVbWCBfev5/RyPpR5VQObI3yo8=
+		w2tblrIH2OuG8InhzlIRR9t+ZBQ=
 		</data>
 		<key>Headers/WM_DataEncode.h</key>
 		<data>
@@ -176,11 +180,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RX74neFTKqzHS9SV5Ffg5XDOHrU=
+			qYd3zTdg8JVfApGMqFKGm+hmRnI=
 			</data>
 			<key>hash2</key>
 			<data>
-			kZIp0yhuNBJY349p/e/TieJZvTRGRF/5nVp1ZgbGeqg=
+			XoHEPSVE8w2459eo9GMby+TwVRPp54iJpg90xMzzfJ8=
 			</data>
 		</dict>
 		<key>Headers/ImgOCRProc.h</key>
@@ -225,6 +229,17 @@
 			<key>hash2</key>
 			<data>
 			/5yL0isYonayBZkpV+Voel7ZMAy2IhigoOmtOIY7wxc=
+			</data>
+		</dict>
+		<key>Headers/ImgSuctionSideBook.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DrSUhfRZkIXY5UYH/OypeSBt168=
+			</data>
+			<key>hash2</key>
+			<data>
+			KdESnjK7i5YA2jbVhOiF38mFtrXxX1ZagrLrxynRRww=
 			</data>
 		</dict>
 		<key>Headers/ImgTextFontSize.h</key>
@@ -275,11 +290,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YOVbWCBfev5/RyPpR5VQObI3yo8=
+			w2tblrIH2OuG8InhzlIRR9t+ZBQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			LHkYtEWthP2umIoxsXFdn8Ua1wtVJWOJzWOJLsQAt80=
+			LY3x5GaFL8nlLJhLrH2DW/YCndoh5N6/7dhV1NOsel8=
 			</data>
 		</dict>
 		<key>Headers/WM_DataEncode.h</key>
