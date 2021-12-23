@@ -383,7 +383,7 @@ int MMJ_Color2Gray(MMJ_Img *pImgSrcDst);
  MMJ_Img2BinHfmData:安卓端测试，截图图像二值化，并转成打印数据，最后哈夫曼压缩
  MMJ_Img：截图图像
  iBagDataLenLimit:协议封包数据长度限制，c1-2kb,c7-5kb
- iBinType:二值化类型,0:MMJ_PrinterImgBin；1、MMJ_TextBinary；2、MMJ_Threshold-otsu；3、省墨+otsu；4、锐化误差
+ iBinType:二值化类型,0:MMJ_PrinterImgBin；1、MMJ_TextBinary；2、MMJ_Threshold-otsu；3、省墨+otsu；4、锐化误差5、身份证；6、不做二值；7、图文二值
  iOffset:打印数据偏移点数
  iDataDstLen:压缩后包含打印协议的可打印数据长度
  return:返回可打印数据
@@ -410,6 +410,13 @@ unsigned char *MMJ_HfmData2ImgData(unsigned char *pDataSrc, int iDataLen, int *i
  返回值：二值图像数据
  */
 unsigned char *MMJ_HfmData2ImgData_more(unsigned char *pDataSrc, int iDataLen, int *iImgW, int *iImgH, int *iIdx);
+
+/*
+ MMJ_ImageText2BW：将带图文的图像处理成黑白效果
+ pImgSrcDst:图像
+ return：
+ */
+int MMJ_ImageText2BW(MMJ_Img *pImgSrcDst);
 
 #ifdef __cplusplus
 }

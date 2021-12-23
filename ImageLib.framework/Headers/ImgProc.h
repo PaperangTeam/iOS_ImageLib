@@ -39,6 +39,13 @@ typedef enum ThresholdType
  */
 int Threshold(ImgStruct *pImgSrcDst, int iThreshV, int iMaxV, int iType);
 
+/*
+ ImageText2BW：将带图文的图像处理成黑白效果
+ pImgSrc:原始图像
+ return：返回效果图
+ */
+ImgStruct *ImageText2BW(ImgStruct *pImgSrc);
+
 //灰度化，彩色图像转成灰度图像
 int RGB2Gray(ImgStruct *pImgSrcDst);
 
