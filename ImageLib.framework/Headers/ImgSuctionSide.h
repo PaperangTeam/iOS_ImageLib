@@ -22,6 +22,9 @@ extern "C"
      return:0-找角点失败， 1-找到合适角点
      */
     int GetSuctionSidePointByLsd(ImgStruct *pImgSrc, CPOINT pt[4]);
+
+    int GetSuctionSidePointByLsd1(ImgStruct *pImgSrc, CPOINT pt[4]);
+
 #ifdef __cplusplus
 }
 #endif
