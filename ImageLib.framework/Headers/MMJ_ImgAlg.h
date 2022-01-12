@@ -391,6 +391,16 @@ int MMJ_Color2Gray(MMJ_Img *pImgSrcDst);
 unsigned char *MMJ_Img2BinHfmData(MMJ_Img *pImgSrc, int iBagDataLenLimit, int iBinType, int iOffset, int *iDataDstLen);
 
 /*
+ MMJ_BinImg2HfmData:安卓端测试，二值图像转成打印数据，最后哈夫曼压缩
+ MMJ_Img：二值图像
+ iBagDataLenLimit:协议封包数据长度限制，c1-2kb,c7-5kb
+ iOffset:打印数据偏移点数
+ iDataDstLen:压缩后包含打印协议的可打印数据长度
+ return:返回可打印数据
+ */
+unsigned char *MMJ_BinImg2HfmData(MMJ_Img *pImgSrc, int iBagDataLenLimit, int iOffset, int *iDataDstLen);
+
+/*
  MMJ_HfmData2ImgData:可打印压缩数据还原图像
  pDataSrc：打印数据流
  iDataLen：数据流长度
@@ -417,6 +427,13 @@ unsigned char *MMJ_HfmData2ImgData_more(unsigned char *pDataSrc, int iDataLen, i
  return：
  */
 int MMJ_ImageText2BW(MMJ_Img *pImgSrcDst);
+
+/*
+ MMJ_ImgSharpen:拍书籍，锐化
+ pImgSrcDst:图像
+ return：
+ */
+int MMJ_ImgSharpen(MMJ_Img *pImgSrcDst);
 
 #ifdef __cplusplus
 }

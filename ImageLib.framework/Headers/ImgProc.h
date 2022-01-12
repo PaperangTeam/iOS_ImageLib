@@ -107,6 +107,13 @@ int ImgCLAHE(ImgStruct *pImgSrcDst, CSIZE cTileGridSize, float fClipLimit);
 //模糊锐化
 
 /*
+ ImgLaplacianSharpen:拉普拉斯锐化，3*3
+ pImgSrcDst：图像
+ return:0-错误， 1-成功
+ */
+int ImgLaplacianSharpen(ImgStruct *pImgSrcDst);
+
+/*
 ImgBlur:均值平滑
 pImgSrc:原始图像
 iRadius:半径
