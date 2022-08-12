@@ -18,11 +18,11 @@
 		</data>
 		<key>Headers/ImageManipulation.h</key>
 		<data>
-		94i8gd0S/iRmq1D8vHJoTawNOrA=
+		MovSDcdQWj+fY2Oqd9n7jI8EMCE=
 		</data>
 		<key>Headers/ImageProcessTool.h</key>
 		<data>
-		db92lWiIvdip6ak4IxAq6DdXnDY=
+		5CLm8eHdPQLXgkcMc9cc9yeG1bU=
 		</data>
 		<key>Headers/ImgCore.h</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Headers/MMJ_ImgAlg.h</key>
 		<data>
-		L1k2hSxZOsjp4Zo04uCOEUywYpE=
+		sp8pvQKNnAZ1aRenOalrMuy5YqU=
 		</data>
 		<key>Headers/WM_DataEncode.h</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		68rWfM6vagu6kgl6RzsA+i9DT0Q=
+		3MVAkLnlEjw+hT0xHOCeiGExJpA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -136,22 +136,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			94i8gd0S/iRmq1D8vHJoTawNOrA=
+			MovSDcdQWj+fY2Oqd9n7jI8EMCE=
 			</data>
 			<key>hash2</key>
 			<data>
-			aaBJC1nioP1VbDqK2WbW1cd3WXqBHpCIOpBpohMExCE=
+			zkm4l8nNDoxkQWpOctS+bLwKh0oBRS8X3y731hopAfk=
 			</data>
 		</dict>
 		<key>Headers/ImageProcessTool.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			db92lWiIvdip6ak4IxAq6DdXnDY=
+			5CLm8eHdPQLXgkcMc9cc9yeG1bU=
 			</data>
 			<key>hash2</key>
 			<data>
-			6GJS1cRbYaH6nUl6GxZ4qucOcaBJYLvpgvMTOKLXeg4=
+			mMwQtkHEM6bNZ0m4kZ9AHZOjVEXyUpiNvliNZJX5fqc=
 			</data>
 		</dict>
 		<key>Headers/ImgCore.h</key>
@@ -290,11 +290,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			L1k2hSxZOsjp4Zo04uCOEUywYpE=
+			sp8pvQKNnAZ1aRenOalrMuy5YqU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ITnhRumOrCINaQUbvGJf0ZEUwpafKON4dauYwkUhNg8=
+			JL2XhlzRKNo4aXwAVDbpKSoDSAliZAkNRy2xuDRsUa4=
 			</data>
 		</dict>
 		<key>Headers/WM_DataEncode.h</key>

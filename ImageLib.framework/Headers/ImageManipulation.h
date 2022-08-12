@@ -29,6 +29,10 @@ typedef NS_ENUM(NSUInteger, EFilterType) {
 + (UIImage *)manipulationWithImage:(UIImage *)originalImage
                              width:(NSInteger)width
                         withPoints:(NSArray *)points;
+/// 二值化新算法 +manipulationWithImage：width：withPoints： 将抛弃
++ (UIImage *)newManipulationWithImage:(UIImage *)originalImage
+                                width:(NSInteger)width
+                                 flag:(int *)flag;
 + (UIImage *)getGrayScaleImageWithImage:(UIImage *)image width:(NSInteger)width;
 + (UIImage *)manipulationWithImage:(UIImage *)originalImage andFilter:(NSInteger)type;
 + (UIImage *)dealWithImageForText:(UIImage *)originalImage;

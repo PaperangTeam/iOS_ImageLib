@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "MMJ_ImgAlg.h"
 
+NS_ASSUME_NONNULL_BEGIN
 @interface ImageProcessTool : NSObject
 
 #pragma mark - 滤镜
@@ -73,9 +74,10 @@
 + (NSArray<UIImage *> *)getFitImagesWithHeight:(NSInteger)iNewH
                                   originImages:(NSArray<UIImage *> *)originImages;
 
-+ (UIImage *)imageAutoBinaryzation:(UIImage *)image withPoints:(NSArray *)points;
++ (UIImage *)imageAutoBinaryzation:(UIImage *)image withPoints:(NSArray * _Nullable)points;
 + (UIImage *)imageTextBinary:(UIImage *)image changeImgSize:(BOOL)change;
 + (UIImage *)imageWithPrinterImgBin:(UIImage *)image withPoints:(NSArray *)points;
++ (UIImage *)imageWithPrintImgBin:(UIImage *)image flag:(int *)flag;
 
 #pragma mark - Scan
 
@@ -119,4 +121,50 @@
 
 + (void)freeSth;
 
+/// 获取打印数据（F1）
+/// @param image 图片
+/// @param packageSize 包大小
+/// @param paperWidth 宽
+/// @param iBinType 处理类型
+/// @param needBinaryzation 是否要二值化
++ (NSData *)getA4PrintData:(UIImage *)image
+               packageSize:(int)packageSize
+                paperWidth:(CGFloat)paperWidth
+                  iBinType:(NSInteger)iBinType
+          needBinaryzation:(BOOL)needBinaryzation;
+
+//        A4纸宽度为21.0cm，长度为29.7cm
+//        限制上下左右留白为1.27cm，则画布宽18.46cm，长27.16cm
+/// 获取A4打印图片
+/// @param images 原图
+/// @param addInsets 是否加边距
++ (NSArray<UIImage *>*)getA4Images:(NSArray<UIImage *>*)images
+                         addInsets: (BOOL)addInsets
+               isWidthPaddingPercent:(BOOL)isWidthPaddingPercent
+            regularPaperContinuity: (BOOL)regularPaperContinuity;
+
++ (CGSize)getA4ContentImageSize: (CGSize)imageSize
+                      addInsets: (BOOL)addInsets
+          isWidthPaddingPercent:(BOOL)isWidthPaddingPercent
+         regularPaperContinuity: (BOOL)regularPaperContinuity;
+
++ (UIImage *)getA4ImageFromData:(NSData *)data;
++ (UIImage *)getA4ImageFromUrl:(NSURL *)url;
+
+
+//MMJ_BLACKWHITE,黑白滤镜
++ (NSArray <UIImage *>*)getFilterImagesWithImages:(NSArray *)images
+                                           filter:(int)filter;
+
++ (NSArray <NSValue *>* _Nullable)findNewEdgePaperClip:(UIImage *)image;
++ (NSArray <NSArray <NSValue *> *> * _Nullable)findBookNewEdge:(UIImage *)image;
++ (NSArray <UIImage *>*)getAutoBinaryzationImagesWithImages:(NSArray *)images;
+
+/// 误差扩散
+/// @param image 图片
+/// @param luminance 是否预处理
++ (UIImage *)errorDiffusionByShortWithImage:(UIImage *_Nullable)image
+                                  luminance:(BOOL) luminance;
 @end
+
+NS_ASSUME_NONNULL_END

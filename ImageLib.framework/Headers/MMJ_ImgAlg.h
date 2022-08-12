@@ -422,6 +422,18 @@ unsigned char *MMJ_HfmData2ImgData(unsigned char *pDataSrc, int iDataLen, int *i
 unsigned char *MMJ_HfmData2ImgData_more(unsigned char *pDataSrc, int iDataLen, int *iImgW, int *iImgH, int *iIdx);
 
 /*
+/*
+ MMJ_PrinterData2Alpha8888:单通道打印数据转四通道
+ pDataSrc:单通道打印数据
+ iSrcLen:数据长度
+ iw:图像宽
+ ih:图像高
+ iType:四通道类型，安卓rgba888=5，iosabgr888=4
+ return:返回四通道数据，宽高一样
+ */
+unsigned char *MMJ_PrinterData2Alpha8888(unsigned char *pDataSrc, int iSrcLen, int iw, int ih, int iType);
+
+/*
  MMJ_ImageText2BW：将带图文的图像处理成黑白效果
  pImgSrcDst:图像
  return：
@@ -435,6 +447,41 @@ int MMJ_ImageText2BW(MMJ_Img *pImgSrcDst);
  */
 int MMJ_ImgSharpen(MMJ_Img *pImgSrcDst);
 
+/*
+ MMJ_ColoringBook：涂色本
+ pImgSrc：图像
+ return：
+ */
+MMJ_Img *MMJ_ColoringBook(MMJ_Img *pImgSrc);
+
+
+
+/*
+ MMJ_ImageRGB2White:pdf转图像预先处理，Convert RGB colors to luminance.
+ */
+void MMJ_ImageRGB2White(MMJ_Img *pImgSrcDst);
+
+
+/*
+ MMJ_ImgPaging2Bin:图像分页二值化
+ pImgSrcDst：图像
+ iflag：0-首页可传，自动判断，1或2，第一页的打印处理状态
+ pDataE：上页临时数据。short类型2行宽度数据量。外部申请自己控制
+ return：-1-错误，1-2，第一页的打印处理状态
+ */
+int MMJ_ImgPaging2Bin(MMJ_Img *pImgSrcDst, int iFlag, short *pDataE);
+
+/*
+ MMJ_TrueQuestionPaper:真题试卷二值化
+ pImgSrcDst:图像
+ return：
+ */
+int MMJ_TrueQuestionPaper(MMJ_Img *pImgSrcDst);
+/*
+ 新的打印算法，提前量统计，错开同色底引起的顶部规律纹理
+ 
+ */
+int MMJ_PrinterImgBinA4(MMJ_Img *pImgSrcDst);
 #ifdef __cplusplus
 }
 #endif
